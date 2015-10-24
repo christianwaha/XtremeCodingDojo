@@ -1,1 +1,1 @@
-C:\Trafficlight2\Trafficlight2\TrafficApp\TrafficApp.csproj;arm
+C:\Users\chris\Source\Repos\XtremeCodingDojo\Windows 10 IoT Dojo Munich\Team AmpelSteuerung\Trafficlight2\TrafficApp\TrafficApp.csproj;arm
