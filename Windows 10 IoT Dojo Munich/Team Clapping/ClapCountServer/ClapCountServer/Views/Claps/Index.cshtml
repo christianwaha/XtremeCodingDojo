@@ -1,0 +1,19 @@
+﻿<h2>ClapCounterClient</h2>
+<div id="view" class="big">Connecting...</div>
+
+@section scripts {
+    <script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script>
+        $(function () {
+            $.connection.hub.logging = true;
+            var claps = $.connection.clapHub;
+            claps.client.newClaps = function (count) {
+                $('#view').html(count);
+            };
+            $.connection.hub.start().done(function () {
+                $('#view').html("Connected");
+            });
+        });
+    </script>
+}
